@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "firstName": "Nate",
+    "lastName": "Pickard",
+    "phone": "555-5555",
+    "company": "CoolCompany",
+    "project": "CRM project",
+    "notes": "This is a note"
+  },
+  {
+    "id": 1,
+    "firstName": "Nate",
+    "lastName": "Pickard",
+    "phone": "555-5555",
+    "company": "CoolCompany",
+    "project": "CRM project",
+    "notes": "This is a note"
+  },
+  {
+    "id": 1,
+    "firstName": "Nate",
+    "lastName": "Pickard",
+    "phone": "555-5555",
+    "company": "CoolCompany",
+    "project": "CRM project",
+    "notes": "This is a note"
+  }
+]
