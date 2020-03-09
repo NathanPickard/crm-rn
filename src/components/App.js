@@ -31,7 +31,7 @@ export default class App extends Component<Props> {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <Text style={styles.welcome}>Welcome to CRM!</Text>
+          <Text style={styles.welcome}>Welcome to CRM2!</Text>
         </View>
       </Provider>
     );
