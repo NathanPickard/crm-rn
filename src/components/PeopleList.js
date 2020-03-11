@@ -33,6 +33,7 @@ class PeopleList extends Component {
         <FlatList
           data={this.props.people}
           renderItem={({ item }) => <PeopleItem people={item} />}
+          keyExtractor={(item, index) => index.toString()}
         />
       )
     }

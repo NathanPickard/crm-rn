@@ -3,9 +3,9 @@ export const selectPerson = (peopleId) => {
     type: 'SELECTED_PERSON',
     selectId: peopleId,
   };
-};
+};  
 
-export const nonePerson = () => {
+export const noneSelected = () => {
   return {
     type: 'NONE_SELECTED',
   };

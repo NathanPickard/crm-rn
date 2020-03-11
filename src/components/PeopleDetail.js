@@ -72,7 +72,7 @@ class PeopleDetail extends Component {
       <View style={styles.container}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <Image
-            source={require('../images/ImageBackground.jpg')}
+            source={require('../images/background.jpg')}
             style={[theme.cardImageStyle, styles.image]}
           />
           <EvilIcon name={'user'} size={100} style={styles.icon} />
@@ -116,9 +116,9 @@ class PeopleDetail extends Component {
               />
             </TouchableOpacity>
             <View style={styles.acitonArea}>
-              <text>Call</text>
-              <text>Email</text>
-              <text>SMS</text>
+              <Text>Call</Text>
+              <Text>Email</Text>
+              <Text>SMS</Text>
             </View>
           </View>
         </ScrollView>
@@ -129,7 +129,7 @@ class PeopleDetail extends Component {
 
 const mapStateToProps = state => {
   return {
-    personSelected: state.personSelected,
+    person: state.personSelected,
   }
 }
 
