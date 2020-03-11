@@ -25,7 +25,7 @@ import reducers from '../reducers/PeopleReducer';
 import Navigation from './Navigation';
 import thunk from 'redux-thunk';
 
-const store = createStore(reducers, applyMiddleware(thunk);
+const store = createStore(reducers, applyMiddleware(thunk));
 
 type Props = {};
 

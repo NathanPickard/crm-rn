@@ -97,7 +97,7 @@ class AddPerson extends Component {
             onChangeText={value => this.props.formUpdate({ prop: 'notes', value })}
           />
           <View style={styles.addButton}>
-            <AddButton />
+            <AddButton onPress={this.onAddPress.bind(this)} />
           </View>
         </View>
       </ScrollView>
