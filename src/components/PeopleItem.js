@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { getTheme } from 'react-native-material-kit';
+import Icon from 'react-native-vector-icons/EvilIcons';
 import * as actions from '../actions';
 
 const theme = getTheme();
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
   },
   action: {
     backgroundColor: 'black',
-    color: 'white'
+    color: 'white',
   },
   icon: {
     position: 'absolute',
@@ -29,24 +30,25 @@ const styles = StyleSheet.create({
     color: 'white',
     backgroundColor: 'rgba(255, 255, 255, 0)',
   },
-
 });
 
 const PeopleItem = (props) => {
-  render() {
-    return (
-      <View>
-        <Image />
-        <Icon />
-        <Text>{props.people.firstName} {props.people.lastName}</Text>
-        <Text>{props.people.company}</Text>
-      </View>
-    )
-  }
+  return (
+    <View style={(theme.cardStyle, styles.card)}>
+      <Image
+        source={require('../images/background.jpg')}
+        style={[theme.cardImageStyle, styles.image]}
+      />
+      <Icon
+        name={'user'}
+        size={100}
+        style={styles.icon}
+      />
+      <Text style={[theme.cardTitleStyle, styles.title]}>{props.people.firstName} {props.people.lastName}</Text>
+      <Text style={[theme.cardActionStyle, styles.action]}>{props.people.company}</Text>
+    </View>
+  )
 }
 
-const mapStateToProps = state => {
-  return { people: state.people }
-}
 
 export default connect(null, actions)(PeopleItem);
