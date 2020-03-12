@@ -87,7 +87,7 @@ class AddPerson extends Component {
             placeholder={'Project...'}
             tintColor={MKColor.Teal}
             value={this.props.project}
-            onChangeText={value => this.props.formUpdate({ prop: 'projet', value })}
+            onChangeText={value => this.props.formUpdate({ prop: 'project', value })}
           />
           <MKTextField
             textInputStyle={styles.fieldStyles}
