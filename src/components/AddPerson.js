@@ -46,7 +46,7 @@ class AddPerson extends Component {
     return (
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.form}>
-          <Text>Adda new contact</Text>
+          <Text>Add a new contact</Text>
           <MKTextField
             textInputStyle={styles.fieldStyles}
             placeholder={'First name...'}

@@ -77,7 +77,8 @@ class PeopleDetail extends Component {
           />
           <EvilIcon name={'user'} size={100} style={styles.icon} />
           <SimpleIcon name={'close'} size={30} style={styles.closeIcon}
-            onPress={() => this.props.noneSelected()} />
+            onPress={() => this.props.noneSelected()}
+          />
           <Text style={[theme.cardTitleStyle, styles.title1]}>{this.props.person.firstName} {this.props.person.lastName}</Text>
           <Text style={[theme.cardTitleStyle, styles.title2]}>from {this.props.person.company}</Text>
           <View style={styles.textArea}>
@@ -96,6 +97,20 @@ class PeopleDetail extends Component {
             <MaterialIcon name={'mode-edit'} size={40} style={styles.textIcons} />
             <Text style={theme.cardContentStyle}>{this.props.person.notes}</Text>
           </View>
+
+          <View style={styles.editArea}>
+            <TouchableOpacity style={styles.sections}>
+              <MaterialIcon name={'autorenew'} size={40} style={styles.editIcon} />
+              <Text style={theme.cardContentStyle}>EDIT</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.sections}
+              onPress={() => { this.props.deleteContact(this.props.person._id) }}>
+              <MaterialIcon name={'delete-forever'} size={40} style={styles.editIcon} />
+              <Text style={theme.cardContentStyle}>DELETE</Text>
+            </TouchableOpacity>
+          </View>
+
+
           <View>
             <TouchableOpacity>
               <Image
